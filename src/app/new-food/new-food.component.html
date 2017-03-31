@@ -1,5 +1,5 @@
 <div class="container">
-  <button (click)="showNewFood()">Add a new food</button>
+  <button (click)="showNewFood()" class="addANewFood" >Add a new food</button>
   <div *ngIf="showNew">
     <h1>Add a new food :</h1>
 
@@ -14,5 +14,4 @@
 
     <button (click)="submitForm(newFood.value, newDetails.value, newGramsOfSugar.value)">Add food</button>
     <button (click)="hideNewFood()">Hide</button>
-
 </div>

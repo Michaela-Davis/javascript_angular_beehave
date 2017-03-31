@@ -9,6 +9,7 @@ import { Food } from './food.model';
 
 export class AppComponent {
   title = 'Beehave';
+  selectedFood = null;
 
   masterFoodList: Food[] = [
     new Food('Mango', '1 mango contains 46 grams of sugar', 46),
@@ -22,6 +23,14 @@ export class AppComponent {
 
   addFood(newFoodFromChild: Food) {
     this.masterFoodList.push(newFoodFromChild);
+  }
+
+  editFood(clickedFood) {
+    this.selectedFood = clickedFood;
+  }
+
+  finishedEditing() {
+    this.selectedFood = null;
   }
 
 }

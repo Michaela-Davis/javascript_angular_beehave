@@ -1,9 +1,20 @@
 <ul>
-  <li *ngFor="let currentFood of childFoodList">
-    {{currentFood.food}} &nbsp;&nbsp;&nbsp;&nbsp; <br>
-    &nbsp;&nbsp;&nbsp;<span class="sugar">{{currentFood.gramsOfSugar}}
+  <li *ngFor="let currentFood of childFoodList" (click)="showFoodDetails(currentFood)">
+    <span class="foodHover">{{currentFood.food}}</span> &nbsp;&nbsp;&nbsp;&nbsp; <br>
+    <span class="sugar">{{currentFood.gramsOfSugar}}
       <span class="grams">grams of sugar</span>
-    </span>
+    </span> <br>
+    <!-- <span class="details" >Details: {{currentFood.details}}</span> -->
   </li>
+
+  <div class="well whiteWell" *ngIf="showFood">
+    <span class="teal">
+      <h2>Food: {{showFood.food}}</h2>
+      <h3>Details: {{showFood.details}}</h3>
+      <h3>Grams of Sugar: {{showFood.gramsOfSugar}}</h3>
+    </span>
+      <button (click)="editButtonHasBeenClicked(showFood)">Edit!</button>
+      <button (click)="hideFoodDetails(currentFood)">Hide</button>
+    </div>
 
 </ul>

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="well editWell" *ngIf="childSelectedFood">
+    <h2>Edit: {{childSelectedFood.food}}</h2>
+
+    <label>Food: </label>
+    <input [(ngModel)]="childSelectedFood.food" class="form-control">
+
+    <label> Details: </label>
+    <input [(ngModel)]="childSelectedFood.details" class="form-control">
+
+    <label> Grams of Sugar: </label>
+    <input [(ngModel)]="childSelectedFood.gramsOfSugar" class="form-control">
+    <br>
+    <button class="darkButton" (click)="doneButtonClicked()">Done</button>
+  </div>
+</div>

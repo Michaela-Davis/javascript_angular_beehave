@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Food } from '../food.model';
 
 @Component({
@@ -8,7 +8,23 @@ import { Food } from '../food.model';
 })
 export class FoodListComponent implements OnInit {
   @Input() childFoodList:Food[];
+  @Output() clickSender = new EventEmitter();
+
+  selectedFood: Food = null;
+  showFood: Food = null;
+
+  editButtonHasBeenClicked(foodToEdit: Food) {
+    this.clickSender.emit(foodToEdit);
+  }
+
+  showFoodDetails(currentFood) {
+    this.showFood = currentFood;
+  }
   
+  hideFoodDetails(currentFood) {
+    this.showFood = null;
+  }
+
   // when I tried taking this & the corresponding OnInit out the webpack wouldn't build
   ngOnInit() {
   }
