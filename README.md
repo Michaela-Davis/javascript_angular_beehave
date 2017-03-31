@@ -74,6 +74,8 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 * COMMIT -m "add planning with angular-cli commands corresponding to commits"
 
+* `apm install atom-typescript` (installs package in Atom that takes away the endless gray in .ts files)
+
 * `ng g class food.model`
 * COMMIT -m "create food model"
 
