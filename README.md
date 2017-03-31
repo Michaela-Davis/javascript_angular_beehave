@@ -4,7 +4,7 @@
 
 #### By _**Michaela Davis**_
 
-This website application allows a user to track their food intake, including details about thier food and the grams of sugar it contains.
+This sugar tracking application allows users to log what they've eaten each day, including details about the item and the grams of sugar it contains.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
@@ -46,18 +46,18 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 ## Planning
 * Model / forms
-  * item:
+  * food:
   * details:
   * grams: (of sugar)
 
 * app.module.ts (Root Module)
   * app.component.ts (Root Component)
-    * item-list.component.ts (Nested Component)
-      * item-list.component.html (Corresponding Template)
-    * edit-item.component.ts (Nested Component)
-      * edit-item.component.html (Corresponding Template)
-    * new-item.component.ts (Nested Component)
-      * new-item.component.html (Corresponding Template)
+    * food-list.component.ts (Nested Component)
+      * food-list.component.html (Corresponding Template)
+    * edit-food.component.ts (Nested Component)
+      * edit-food.component.html (Corresponding Template)
+    * new-food.component.ts (Nested Component)
+      * new-food.component.html (Corresponding Template)
 
 * `npm install -g angular-cli`
 * `npm install -g typescript`
@@ -71,3 +71,20 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 * replace angular favicon with Beehave icon
 * connect to github
 * COMMIT -m "init commit, with Beehave icon"
+
+* COMMIT -m "add planning with angular-cli commands corresponding to commits"
+
+* `ng g class food.model`
+* COMMIT -m "create food model"
+
+* `ng g component food-list`
+* COMMIT -m "create food-list component"
+
+* `ng g component new-food`
+* COMMIT -m "add new-food component with form"
+
+* `ng g component edit-food`
+* COMMIT -m "add edit-food component with form"
+
+* `ng g pipe sugar-grams`
+* COMMIT -m "implement sugarColor by grams"
