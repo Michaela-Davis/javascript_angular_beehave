@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+body,
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.logoImage {
+  max-height: 70px;
+}
