@@ -12,6 +12,7 @@ export class FoodListComponent implements OnInit {
 
   selectedFood: Food = null;
   showFood: Food = null;
+  filterByGramsOfSugar: string ="allFoods";
 
   editButtonHasBeenClicked(foodToEdit: Food) {
     this.clickSender.emit(foodToEdit);
@@ -20,9 +21,13 @@ export class FoodListComponent implements OnInit {
   showFoodDetails(currentFood) {
     this.showFood = currentFood;
   }
-  
+
   hideFoodDetails(currentFood) {
     this.showFood = null;
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByGramsOfSugar = optionFromMenu;
   }
 
   // when I tried taking this & the corresponding OnInit out the webpack wouldn't build

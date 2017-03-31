@@ -53,7 +53,7 @@ li {
 /*   NEW FOOD */
 .addANewFood {
   position: fixed;
-  top: 90px;
+  top: 130px;
   right: 90px;
   width: 125px;
   font-size: 70%;
@@ -82,4 +82,17 @@ li {
 
 .darkButton {
   background-color: #222222;
+}
+
+select,
+option {
+  position: fixed;
+  top: 70px;
+  right: 90px;
+  width: 150px;
+  font-size: 70%;
+  background-color: white;
+  color: teal;
+  border-radius: 6px;
+  letter-spacing: 2px;
 }

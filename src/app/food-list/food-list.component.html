@@ -1,5 +1,13 @@
+<!-- drop down menu to view different sugar options -->
+<select (change)="onChange($event.target.value)">
+  <option value="allFoods" selected="selected">All Foods</option>
+  <option value="greaterThanFifteen">High Sugar</option>
+  <option value="lessThanFifteen">Low Sugar</option>
+</select>
+
+<!-- shows List of Foods entered -->
 <ul>
-  <li *ngFor="let currentFood of childFoodList" (click)="showFoodDetails(currentFood)">
+  <li *ngFor="let currentFood of childFoodList | sugarGrams:filterByGramsOfSugar" (click)="showFoodDetails(currentFood)">
     <span class="foodHover">{{currentFood.food}}</span> &nbsp;&nbsp;&nbsp;&nbsp; <br>
     <span class="sugar">{{currentFood.gramsOfSugar}}
       <span class="grams">grams of sugar</span>
@@ -7,6 +15,7 @@
     <!-- <span class="details" >Details: {{currentFood.details}}</span> -->
   </li>
 
+  <!-- shows Food Details -->
   <div class="well whiteWell" *ngIf="showFood">
     <span class="teal">
       <h2>Food: {{showFood.food}}</h2>
@@ -17,4 +26,4 @@
       <button (click)="hideFoodDetails(currentFood)">Hide</button>
     </div>
 
-</ul>
+</ul> <!-- ends List of Foods entered -->
