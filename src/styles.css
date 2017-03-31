@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-/*   EVERYTHING   */
+/*  begin EVERYTHING   */
 body,
 h1 {
   font-family: 'Berkshire Swash', cursive;
@@ -23,9 +23,10 @@ button {
   border-radius: 6px;
   letter-spacing: 2px;
 }
+/*   end EVERYTHING   */
 
 
- /*   FOOD LIST   */
+ /*  begin FOOD LIST   */
 .sugar {
   color: teal;
   padding-left: 10px;
@@ -49,13 +50,29 @@ li {
 .foodHover:hover {
   text-decoration: underline;
 }
+ /*  end FOOD LIST   */
 
-/*   NEW FOOD */
+ /* begin DROP DOWN SORT MENU*/
+select,
+option {
+  position: fixed;
+  top: 40px;
+  right: 90px;
+  width: 150px;
+  font-size: 70%;
+  background-color: white;
+  color: teal;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+ /* end DROP DOWN SORT MENU*/
+
+/*  begin NEW FOOD */
 .addANewFood {
   position: fixed;
-  top: 130px;
+  top: 100px;
   right: 90px;
-  width: 125px;
+  width: 130px;
   font-size: 70%;
 }
 
@@ -71,7 +88,14 @@ li {
 .whiteWell {
   background-color: white;
 }
- /*EDIT WELL*/
+
+.darkText {
+  color: #222222;
+}
+/*  end NEW FOOD */
+
+
+ /* begin EDIT WELL */
 .editWell {
   background-color: teal;
   margin-left: 25px;
@@ -84,15 +108,4 @@ li {
   background-color: #222222;
 }
 
-select,
-option {
-  position: fixed;
-  top: 70px;
-  right: 90px;
-  width: 150px;
-  font-size: 70%;
-  background-color: white;
-  color: teal;
-  border-radius: 6px;
-  letter-spacing: 2px;
-}
+ /* end EDIT WELL */

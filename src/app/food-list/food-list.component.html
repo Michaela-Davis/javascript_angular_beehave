@@ -18,12 +18,13 @@
   <!-- shows Food Details -->
   <div class="well whiteWell" *ngIf="showFood">
     <span class="teal">
-      <h2>Food: {{showFood.food}}</h2>
-      <h3>Details: {{showFood.details}}</h3>
-      <h3>Grams of Sugar: {{showFood.gramsOfSugar}}</h3>
+      <h2>Food: <span class="darkText">{{showFood.food}}</span></h2>
+      <h3>Details: <span class="darkText">{{showFood.details}}</span></h3>
+      <h3>Grams of Sugar: <span class="darkText">{{showFood.gramsOfSugar}}</span></h3>
     </span>
-      <button (click)="editButtonHasBeenClicked(showFood)">Edit!</button>
-      <button (click)="hideFoodDetails(currentFood)">Hide</button>
+    <br>
+      <button (click)="editButtonHasBeenClicked(showFood)"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</button>&nbsp;
+      <button (click)="hideFoodDetails(currentFood)"><i class="fa fa-minus" aria-hidden="true"></i> Hide</button>
     </div>
 
 </ul> <!-- ends List of Foods entered -->

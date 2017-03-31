@@ -1,5 +1,5 @@
 <div class="container">
-  <button (click)="showNewFood()" class="addANewFood" >Add a new food</button>
+  <button (click)="showNewFood()" class="addANewFood"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;Add a new food</button>
   <div *ngIf="showNew">
     <h1>Add a new food :</h1>
 
@@ -11,7 +11,7 @@
 
     <label for="gramsOfSugar"> Grams of Sugar : </label>
     <input #newGramsOfSugar class="form-control">
-
-    <button (click)="submitForm(newFood.value, newDetails.value, newGramsOfSugar.value)">Add food</button>
-    <button (click)="hideNewFood()">Hide</button>
+    <br>
+    <button (click)="submitForm(newFood.value, newDetails.value, newGramsOfSugar.value)"><i class="fa fa-plus" aria-hidden="true"></i> Add food</button> &nbsp;
+    <button (click)="hideNewFood()"><i class="fa fa-minus" aria-hidden="true"></i> Hide</button>
 </div>

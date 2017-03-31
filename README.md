@@ -89,4 +89,4 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 * COMMIT -m "add edit-food component with form"
 
 * `ng g pipe sugar-grams`
-* COMMIT -m "implement sugarColor by grams"
+* COMMIT -m "implement sugarGrams pipe"
