@@ -1,3 +1,9 @@
 <ul>
-  <li *ngFor="let currentFood of childFoodList"> {{currentFood.food}}</li>
+  <li *ngFor="let currentFood of childFoodList">
+    {{currentFood.food}} &nbsp;&nbsp;&nbsp;&nbsp; <br>
+    &nbsp;&nbsp;&nbsp;<span class="sugar">{{currentFood.gramsOfSugar}}
+      <span class="grams">grams of sugar</span>
+    </span>
+  </li>
+
 </ul>

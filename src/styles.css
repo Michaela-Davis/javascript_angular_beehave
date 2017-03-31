@@ -10,3 +10,26 @@ h1 {
 .logoImage {
   max-height: 70px;
 }
+
+.sugar {
+  color: teal;
+}
+
+.grams {
+  font-size: 80%
+}
+
+li {
+  padding-bottom: 25px;
+  list-style: none;
+}
+
+.form-control {
+  max-width: 70%
+}
+
+button {
+  background-color: teal;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}

@@ -6,6 +6,7 @@ import { Food } from './food.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Beehave';
 
@@ -18,4 +19,9 @@ export class AppComponent {
     new Food('Milky Way Midnight', '1 of these candy bars contains 24 grams of sugar', 24),
     new Food('Chocolate Cake', '1 (64 grams) piece of cake with frosting contains 26 grams of sugar', 26)
   ]
+
+  addFood(newFoodFromChild: Food) {
+    this.masterFoodList.push(newFoodFromChild);
+  }
+
 }

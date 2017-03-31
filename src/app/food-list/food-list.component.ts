@@ -8,8 +8,8 @@ import { Food } from '../food.model';
 })
 export class FoodListComponent implements OnInit {
   @Input() childFoodList:Food[];
-  constructor() { }
-
+  
+  // when I tried taking this & the corresponding OnInit out the webpack wouldn't build
   ngOnInit() {
   }
 
