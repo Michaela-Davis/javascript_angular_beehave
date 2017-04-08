@@ -20,8 +20,8 @@ You will need the following things properly installed on your computer:
 ## Installation
 
 ```bash
-git clone https://github.com/Michaela-Davis/javascript_angular_whitewater.git
-cd javascript_angular_whitewater
+git clone https://github.com/Michaela-Davis/javascript_angular_beehave.git
+cd javascript_angular_beehave
 npm install
 bower install
 ```
