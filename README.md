@@ -23,7 +23,8 @@ You will need the following things properly installed on your computer:
 git clone https://github.com/Michaela-Davis/javascript_angular_whitewater.git
 cd javascript_angular_whitewater
 npm install
-bower install```
+bower install
+```
 
 
 ## Running / Development
@@ -37,6 +38,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
 ## Planning
 * Model / forms
   * food:
