@@ -3,14 +3,15 @@
     <h2>Edit: {{childSelectedFood.food}}</h2>
 
     <label>Food: </label>
-    <input [(ngModel)]="childSelectedFood.food" class="form-control">
-
-    <label> Details: </label>
-    <input [(ngModel)]="childSelectedFood.details" class="form-control">
+    <input [(ngModel)]="childSelectedFood.food" class="form-control" type="text" maxlength="50">
 
     <label> Grams of Sugar: </label>
-    <input [(ngModel)]="childSelectedFood.gramsOfSugar" class="form-control">
+    <input [(ngModel)]="childSelectedFood.gramsOfSugar" class="form-control" type="number" min="1" >
+
+    <label> Details: </label>
+    <input [(ngModel)]="childSelectedFood.details" class="form-control" type="text" maxlength="350">
     <br>
+    
     <button class="darkButton" (click)="doneButtonClicked()"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Done</button>
   </div>
 </div>

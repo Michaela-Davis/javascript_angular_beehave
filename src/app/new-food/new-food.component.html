@@ -4,14 +4,15 @@
     <h1>Add a new food :</h1>
 
     <label for="food">Food : </label>
-    <input #newFood class="form-control">
-
-    <label for="details"> Details : </label>
-    <input #newDetails class="form-control">
+    <input #newFood class="form-control" type="text" maxlength="50">
 
     <label for="gramsOfSugar"> Grams of Sugar : </label>
-    <input #newGramsOfSugar class="form-control">
+    <input #newGramsOfSugar class="form-control" type="number" min="1">
+
+    <label for="details"> Details : </label>
+    <input #newDetails class="form-control" maxlength="350">
     <br>
-    <button (click)="submitForm(newFood.value, newDetails.value, newGramsOfSugar.value)"><i class="fa fa-plus" aria-hidden="true"></i> Add food</button> &nbsp;
+
+    <button (click)="submitForm(newFood.value, newDetails.value, newGramsOfSugar.value); newFood.value=''; newDetails.value=''; newGramsOfSugar.value='';"><i class="fa fa-plus" aria-hidden="true"></i> Add food</button> &nbsp;
     <button (click)="hideNewFood()"><i class="fa fa-minus" aria-hidden="true"></i> Hide</button>
 </div>
